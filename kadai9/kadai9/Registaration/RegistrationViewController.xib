@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegistrationViewController" customModule="kadai9" customModuleProvider="target">
+            <connections>
+                <outlet property="emailTextField" destination="Vqz-gT-uVj" id="fwN-Up-Fee"/>
+                <outlet property="passwordTextField" destination="OOe-kx-BAg" id="w5Q-dX-J6P"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="italy" translatesAutoresizingMaskIntoConstraints="NO" id="c4v-VA-90y">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                </imageView>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mea-BJ-hbY">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="fY9-lm-LLe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x78-rf-GkY">
+                                <rect key="frame" x="50" y="250" width="314" height="60"/>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="wue-xg-D3Z"/>
+                                </constraints>
+                                <state key="normal" title="会員登録">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="registerNewUser:" destination="-1" eventType="touchUpInside" id="hb0-Iu-sml"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vqz-gT-uVj">
+                                <rect key="frame" x="50" y="100" width="314" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="7WB-hA-l7o"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="vb5-Pu-abe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OOe-kx-BAg">
+                                <rect key="frame" x="50" y="170" width="314" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="MYd-5T-hBQ"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="jdn-eq-DDi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="新規会員登録" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qpv-i9-aX8">
+                                <rect key="frame" x="121.5" y="40" width="171" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="f2C-Q7-OA7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Vqz-gT-uVj" secondAttribute="trailing" constant="50" id="2Wn-56-XN0"/>
+                            <constraint firstAttribute="trailing" secondItem="OOe-kx-BAg" secondAttribute="trailing" constant="50" id="94l-NL-xDR"/>
+                            <constraint firstAttribute="trailing" secondItem="x78-rf-GkY" secondAttribute="trailing" constant="50" id="AH4-fP-g6K"/>
+                            <constraint firstItem="qpv-i9-aX8" firstAttribute="top" secondItem="fY9-lm-LLe" secondAttribute="top" constant="40" id="Kak-7D-kDa"/>
+                            <constraint firstItem="OOe-kx-BAg" firstAttribute="leading" secondItem="fY9-lm-LLe" secondAttribute="leading" constant="50" id="Pqp-1V-cPb"/>
+                            <constraint firstItem="Vqz-gT-uVj" firstAttribute="leading" secondItem="fY9-lm-LLe" secondAttribute="leading" constant="50" id="QeN-Uv-AOt"/>
+                            <constraint firstItem="x78-rf-GkY" firstAttribute="top" secondItem="OOe-kx-BAg" secondAttribute="bottom" constant="30" id="RtY-Hq-o4N"/>
+                            <constraint firstItem="qpv-i9-aX8" firstAttribute="centerX" secondItem="fY9-lm-LLe" secondAttribute="centerX" id="WZW-cE-yHk"/>
+                            <constraint firstItem="OOe-kx-BAg" firstAttribute="top" secondItem="Vqz-gT-uVj" secondAttribute="bottom" constant="20" id="eOp-nl-ZY8"/>
+                            <constraint firstItem="x78-rf-GkY" firstAttribute="leading" secondItem="fY9-lm-LLe" secondAttribute="leading" constant="50" id="iLn-m7-Ngp"/>
+                            <constraint firstItem="Vqz-gT-uVj" firstAttribute="top" secondItem="qpv-i9-aX8" secondAttribute="bottom" constant="20" id="s8i-dM-2Qm"/>
+                        </constraints>
+                    </view>
+                    <blurEffect style="regular"/>
+                </visualEffectView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Mea-BJ-hbY" secondAttribute="bottom" id="08G-xy-yPq"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="c4v-VA-90y" secondAttribute="trailing" id="6bV-n1-Qun"/>
+                <constraint firstItem="Mea-BJ-hbY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="FZH-RO-uyr"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Mea-BJ-hbY" secondAttribute="trailing" id="H6L-Cc-asp"/>
+                <constraint firstItem="c4v-VA-90y" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Jjn-Ob-hp4"/>
+                <constraint firstItem="Mea-BJ-hbY" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="K3a-l7-fp1"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="c4v-VA-90y" secondAttribute="bottom" id="VuU-FU-HIg"/>
+                <constraint firstItem="c4v-VA-90y" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="y1S-Wg-WWr"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="139" y="121"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="italy" width="168" height="300"/>
+    </resources>
+</document>
